@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
-  - name: Питання та обговорення / Questions and discussions
+  - name: Questions and discussions / Питання та обговорення
     url: https://github.com/llmdevstudio/yarmarka-apps/discussions
-    about: Питання щодо використання краще ставити тут / Ask usage questions here
+    about: Ask usage questions here / Питання щодо використання краще ставити тут
   - name: Google Play
     url: https://play.google.com/store/apps/details?id=com.kailuas.yarmarka
-    about: Сторінка застосунку в Google Play / App page on Google Play
+    about: App page on Google Play / Сторінка застосунку в Google Play

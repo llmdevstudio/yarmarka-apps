@@ -1,45 +1,45 @@
-name: Помилка / Bug report
-description: Щось працює не так, як очікується / Something does not work as expected
+name: Bug report / Помилка
+description: Something does not work as expected / Щось працює не так, як очікується
 labels: ["bug", "needs-triage"]
 body:
   - type: markdown
     attributes:
       value: |
-        Дякуємо, що повідомляєте про проблему! Перевірте, будь ласка, чи немає вже [схожого issue](../issues).
-        Thanks for reporting! Please check for an [existing issue](../issues) first.
+        Thanks for reporting! Please check for an [existing issue](https://github.com/llmdevstudio/yarmarka-apps/issues) first. You can write in English or Ukrainian.
+        Дякуємо, що повідомляєте про проблему! Перевірте, будь ласка, чи немає вже [схожого issue](https://github.com/llmdevstudio/yarmarka-apps/issues). Можна писати українською.
 
   - type: textarea
     id: what-happened
     attributes:
-      label: Що сталося? / What happened?
-      description: Опишіть проблему коротко й конкретно. / Describe the problem.
-      placeholder: Після натискання «Порівняти» застосунок закривається.
+      label: What happened? / Що сталося?
+      description: Describe the problem. / Опишіть проблему коротко й конкретно.
+      placeholder: The app closes after tapping "Compare".
     validations:
       required: true
 
   - type: textarea
     id: steps
     attributes:
-      label: Кроки для відтворення / Steps to reproduce
+      label: Steps to reproduce / Кроки для відтворення
       placeholder: |
-        1. Відкрити «Каталог»
-        2. Вибрати два застосунки
-        3. Натиснути «Порівняти»
+        1. Open "Browse"
+        2. Select two apps
+        3. Tap "Compare"
     validations:
       required: true
 
   - type: textarea
     id: expected
     attributes:
-      label: Що мало статися? / Expected behavior
+      label: Expected behavior / Що мало статися?
     validations:
       required: false
 
   - type: input
     id: app-version
     attributes:
-      label: Версія застосунку / App version
-      description: Налаштування → Про застосунок / Settings → About
+      label: App version / Версія застосунку
+      description: Settings → About / Налаштування → Про застосунок
       placeholder: "1.0 (3)"
     validations:
       required: true
@@ -47,18 +47,18 @@ body:
   - type: dropdown
     id: source
     attributes:
-      label: Звідки встановлено? / Installed from
+      label: Installed from / Звідки встановлено?
       options:
         - Google Play
-        - APK з GitHub / APK from GitHub
-        - Інше / Other
+        - APK from GitHub / APK з GitHub
+        - Other / Інше
     validations:
       required: true
 
   - type: input
     id: device
     attributes:
-      label: Пристрій і версія Android / Device and Android version
+      label: Device and Android version / Пристрій і версія Android
       placeholder: "Samsung Galaxy A54, Android 14"
     validations:
       required: true
@@ -66,18 +66,18 @@ body:
   - type: dropdown
     id: frequency
     attributes:
-      label: Як часто? / How often?
+      label: How often? / Як часто?
       options:
-        - Завжди / Always
-        - Іноді / Sometimes
-        - Один раз / Once
+        - Always / Завжди
+        - Sometimes / Іноді
+        - Once / Один раз
     validations:
       required: false
 
   - type: textarea
     id: screenshots
     attributes:
-      label: Скриншоти або відео / Screenshots or video
-      description: Перетягніть файли сюди. Не додавайте особисті дані. / Drag files here. Do not include personal data.
+      label: Screenshots or video / Скриншоти або відео
+      description: Drag files here. Do not include personal data. / Перетягніть файли сюди. Не додавайте особисті дані.
     validations:
       required: false
