@@ -1,0 +1,83 @@
+name: Помилка / Bug report
+description: Щось працює не так, як очікується / Something does not work as expected
+labels: ["bug", "needs-triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Дякуємо, що повідомляєте про проблему! Перевірте, будь ласка, чи немає вже [схожого issue](../issues).
+        Thanks for reporting! Please check for an [existing issue](../issues) first.
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Що сталося? / What happened?
+      description: Опишіть проблему коротко й конкретно. / Describe the problem.
+      placeholder: Після натискання «Порівняти» застосунок закривається.
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Кроки для відтворення / Steps to reproduce
+      placeholder: |
+        1. Відкрити «Каталог»
+        2. Вибрати два застосунки
+        3. Натиснути «Порівняти»
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Що мало статися? / Expected behavior
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Версія застосунку / App version
+      description: Налаштування → Про застосунок / Settings → About
+      placeholder: "1.0 (3)"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: source
+    attributes:
+      label: Звідки встановлено? / Installed from
+      options:
+        - Google Play
+        - APK з GitHub / APK from GitHub
+        - Інше / Other
+    validations:
+      required: true
+
+  - type: input
+    id: device
+    attributes:
+      label: Пристрій і версія Android / Device and Android version
+      placeholder: "Samsung Galaxy A54, Android 14"
+    validations:
+      required: true
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: Як часто? / How often?
+      options:
+        - Завжди / Always
+        - Іноді / Sometimes
+        - Один раз / Once
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Скриншоти або відео / Screenshots or video
+      description: Перетягніть файли сюди. Не додавайте особисті дані. / Drag files here. Do not include personal data.
+    validations:
+      required: false

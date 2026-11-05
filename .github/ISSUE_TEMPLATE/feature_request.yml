@@ -1,0 +1,33 @@
+name: Ідея / Feature request
+description: Запропонувати нову можливість або покращення / Suggest a feature or improvement
+labels: ["enhancement", "needs-triage"]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Яку задачу це вирішує? / What problem does it solve?
+      placeholder: Хочу швидко бачити, які застосунки оновилися після мого останнього перегляду.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Як це могло б працювати? / How could it work?
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Як ви робите це зараз? / Current workaround
+    validations:
+      required: false
+
+  - type: input
+    id: app-version
+    attributes:
+      label: Версія застосунку / App version
+      placeholder: "1.0 (3)"
+    validations:
+      required: false
